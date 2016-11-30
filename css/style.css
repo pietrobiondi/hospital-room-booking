@@ -1,0 +1,8 @@
+body {
+  background-color: #00BCD4;
+}
+.box {
+  background-color: #fff;
+  border-radius: 0.5em;
+  padding: 15px;
+}
