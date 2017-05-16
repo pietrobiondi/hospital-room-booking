@@ -12,8 +12,8 @@ elseif (empty($_POST['password'])){
 else{
  $username = $_POST['username'];
  $password = $_POST['password'];
- $string = "SELECT * FROM Utenti 
- WHERE Utenti.Username = '" .$username . "' AND Utenti.Password = '" .$password."';";
+ $string = "SELECT * FROM utenti 
+ WHERE utenti.Username = '" .$username . "' AND utenti.Password = '" .$password."';";
  $query =$conn->query($string);
  if($query->num_rows){
    session_start();
