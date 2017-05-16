@@ -3,8 +3,8 @@ include "header.php";
 include "config.php";
 session_start();
 if($_SESSION["IDUtente"] > 0){
-    $queryUtente = "SELECT * FROM Utenti 
-    WHERE Utenti.IDUtente = " .$_SESSION["IDUtente"] .";";
+    $queryUtente = "SELECT * FROM utenti 
+    WHERE utenti.IDUtente = " .$_SESSION["IDUtente"] .";";
     $query = $conn->query($queryUtente);
     if($query->num_rows){
         $arrayUtente = mysqli_fetch_array($query, MYSQLI_ASSOC);
